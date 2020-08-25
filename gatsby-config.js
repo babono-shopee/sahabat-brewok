@@ -13,6 +13,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-source-notionso',
+      options: {
+        name: "Blog",
+        rootPageUrl: "https://www.notion.so/codelabsession/Sahabat-Brewok-f0aa25b988d142e889f6c158316b051d",
+        debug: false,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
