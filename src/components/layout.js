@@ -30,16 +30,33 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          minHeight: `calc(100vh - 140px)`,
+          padding: `1.45rem 1.0875rem`,
         }}
       >
         <main>{children}</main>
-        <footer>
+
+      </div>
+      <footer style={{
+            background: `#F06B2E`,
+            padding: `.5rem 0`,
+          }}>
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            textAlign: `center`
+            
+          }}
+        >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+          <a style={{
+            color: `#ffffff`,
+            
+          }} href="https://www.gatsbyjs.org">Gatsby</a>
+        </div>
+      </footer>
     </>
   )
 }
