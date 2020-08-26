@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import notionRendererFactory from 'gatsby-source-notionso/lib/renderer';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import SEO from "../components/seo"
 import NotionBlockRenderer from '../components/notionBlockRenderer';
 
